@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79AC60D52A102135005F5304 /* DateFormatter+CounterFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AC60D42A102135005F5304 /* DateFormatter+CounterFormat.swift */; };
 		79D900F52A0FE8990069F71F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D900F42A0FE8990069F71F /* AppDelegate.swift */; };
 		79D900F72A0FE8990069F71F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D900F62A0FE8990069F71F /* SceneDelegate.swift */; };
 		79D900F92A0FE8990069F71F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D900F82A0FE8990069F71F /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		79AC60D42A102135005F5304 /* DateFormatter+CounterFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+CounterFormat.swift"; sourceTree = "<group>"; };
 		79D900F12A0FE8990069F71F /* Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Counter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79D900F42A0FE8990069F71F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79D900F62A0FE8990069F71F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79AC60D62A1021A7005F5304 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				79AC60D42A102135005F5304 /* DateFormatter+CounterFormat.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		79D900E82A0FE8990069F71F = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +117,7 @@
 		79D900F32A0FE8990069F71F /* Counter */ = {
 			isa = PBXGroup;
 			children = (
+				79AC60D62A1021A7005F5304 /* Extensions */,
 				79D901242A0FE8B00069F71F /* CounterModel */,
 				79D900F42A0FE8990069F71F /* AppDelegate.swift */,
 				79D900F62A0FE8990069F71F /* SceneDelegate.swift */,
@@ -281,6 +292,7 @@
 				79D9012A2A0FE9000069F71F /* ActionType.swift in Sources */,
 				79D900F92A0FE8990069F71F /* ViewController.swift in Sources */,
 				79D900F52A0FE8990069F71F /* AppDelegate.swift in Sources */,
+				79AC60D52A102135005F5304 /* DateFormatter+CounterFormat.swift in Sources */,
 				79D901282A0FE8F10069F71F /* Action.swift in Sources */,
 				79D900F72A0FE8990069F71F /* SceneDelegate.swift in Sources */,
 			);

@@ -7,17 +7,7 @@
 
 import Foundation
 
-fileprivate func initDateFormatter() -> DateFormatter {
-    let dateFormatter = DateFormatter()
-    dateFormatter.dateStyle = .short
-    dateFormatter.timeStyle = .short
-    dateFormatter.locale = Locale(identifier: "ru_RU")
-    return dateFormatter
-}
-
 struct Action {
-    static private let dateFormatter = initDateFormatter()
-
     let stateBefor: Int
     let actionType: ActionType
     let date: Date
@@ -42,6 +32,6 @@ struct Action {
     }
     
     private var dateAsText: String {
-        return Action.dateFormatter.string(from: date)
+        return DateFormatter.counterFormat().string(from: date)
     }
 }
