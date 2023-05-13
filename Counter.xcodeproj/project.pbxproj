@@ -55,6 +55,7 @@
 		79D901252A0FE8DB0069F71F /* CounterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterModel.swift; sourceTree = "<group>"; };
 		79D901272A0FE8F10069F71F /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		79D901292A0FE9000069F71F /* ActionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionType.swift; sourceTree = "<group>"; };
+		79D9012B2A1017850069F71F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +86,7 @@
 		79D900E82A0FE8990069F71F = {
 			isa = PBXGroup;
 			children = (
+				79D9012B2A1017850069F71F /* README.md */,
 				79D900F32A0FE8990069F71F /* Counter */,
 				79D9010A2A0FE89A0069F71F /* CounterTests */,
 				79D901142A0FE89A0069F71F /* CounterUITests */,
