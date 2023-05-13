@@ -16,6 +16,9 @@
 		79D9010C2A0FE89A0069F71F /* CounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D9010B2A0FE89A0069F71F /* CounterTests.swift */; };
 		79D901162A0FE89A0069F71F /* CounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D901152A0FE89A0069F71F /* CounterUITests.swift */; };
 		79D901182A0FE89A0069F71F /* CounterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D901172A0FE89A0069F71F /* CounterUITestsLaunchTests.swift */; };
+		79D901262A0FE8DB0069F71F /* CounterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D901252A0FE8DB0069F71F /* CounterModel.swift */; };
+		79D901282A0FE8F10069F71F /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D901272A0FE8F10069F71F /* Action.swift */; };
+		79D9012A2A0FE9000069F71F /* ActionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D901292A0FE9000069F71F /* ActionType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		79D901112A0FE89A0069F71F /* CounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79D901152A0FE89A0069F71F /* CounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterUITests.swift; sourceTree = "<group>"; };
 		79D901172A0FE89A0069F71F /* CounterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		79D901252A0FE8DB0069F71F /* CounterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterModel.swift; sourceTree = "<group>"; };
+		79D901272A0FE8F10069F71F /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		79D901292A0FE9000069F71F /* ActionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		79D900F32A0FE8990069F71F /* Counter */ = {
 			isa = PBXGroup;
 			children = (
+				79D901242A0FE8B00069F71F /* CounterModel */,
 				79D900F42A0FE8990069F71F /* AppDelegate.swift */,
 				79D900F62A0FE8990069F71F /* SceneDelegate.swift */,
 				79D900F82A0FE8990069F71F /* ViewController.swift */,
@@ -125,6 +132,16 @@
 				79D901172A0FE89A0069F71F /* CounterUITestsLaunchTests.swift */,
 			);
 			path = CounterUITests;
+			sourceTree = "<group>";
+		};
+		79D901242A0FE8B00069F71F /* CounterModel */ = {
+			isa = PBXGroup;
+			children = (
+				79D901252A0FE8DB0069F71F /* CounterModel.swift */,
+				79D901272A0FE8F10069F71F /* Action.swift */,
+				79D901292A0FE9000069F71F /* ActionType.swift */,
+			);
+			path = CounterModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +275,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79D901262A0FE8DB0069F71F /* CounterModel.swift in Sources */,
+				79D9012A2A0FE9000069F71F /* ActionType.swift in Sources */,
 				79D900F92A0FE8990069F71F /* ViewController.swift in Sources */,
 				79D900F52A0FE8990069F71F /* AppDelegate.swift in Sources */,
+				79D901282A0FE8F10069F71F /* Action.swift in Sources */,
 				79D900F72A0FE8990069F71F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
