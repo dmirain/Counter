@@ -10,41 +10,42 @@ import UIKit
 class ViewController: UIViewController {
     private var counter = CounterModel()
     
-    @IBOutlet weak var historyText: UITextView!
-    @IBOutlet weak var stateLable: UILabel!
-    @IBOutlet weak var increaseButton: UIButton!
-    @IBOutlet weak var decreaseButton: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    @IBAction func resetDidTouch() {
-        counter.reset()
-        updateStateAndHistory()
-    }
-    @IBAction func increaseDidTouch() {
-        counter.increase()
-        updateStateAndHistory()
-    }
-    @IBAction func decreaseDidTouch() {
-        counter.decrease()
-        updateStateAndHistory()
-    }
-    
+
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        historyText.isEditable = false
         increaseButton.layer.cornerRadius = increaseButton.bounds.size.height / 2
         increaseButton.layer.masksToBounds = true
         decreaseButton.layer.cornerRadius = decreaseButton.bounds.size.height / 2
         decreaseButton.layer.masksToBounds = true
     }
-    
+
     private func updateStateAndHistory() {
         stateLable.text = String(counter.state)
         historyText.text = counter.historyAsText()
-        historyText.setContentOffset(.zero, animated: true)
+        historyText.setContentOffset(.zero, animated: false)
+    }
+
+    @IBOutlet weak private var historyText: UITextView!
+    @IBOutlet weak private var stateLable: UILabel!
+    @IBOutlet weak private var increaseButton: UIButton!
+    @IBOutlet weak private var decreaseButton: UIButton!
+
+    @IBAction private func resetDidTouch() {
+        counter.reset()
+        updateStateAndHistory()
+    }
+    
+    @IBAction private func increaseDidTouch() {
+        counter.increase()
+        updateStateAndHistory()
+    }
+    
+    @IBAction private func decreaseDidTouch() {
+        counter.decrease()
+        updateStateAndHistory()
     }
 }
 
